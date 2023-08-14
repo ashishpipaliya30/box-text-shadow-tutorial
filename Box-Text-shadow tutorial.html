@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+
+    .card{
+        padding: 23px 12px;
+        margin: 23px 12px;
+        /* border: 2px solid blue; */
+        background-color: rgb(171, 182, 221);
+
+        /* Box-shadow: offset-x offset-y color; */
+        /* box-shadow: -8px -8px rgb(76, 158, 158); */
+        /* box-shadow: 8px 8px skyblue; */
+
+        /* Box-shadow: offset-x offset-y blur-radius color; */
+        /* box-shadow: -8px -8px 8px skyblue;  */
+
+        /* Box-shadow: offset-x offset-y blur-radius spred-radius color; */
+        /* box-shadow: 8px 8px 8px 4px skyblue; */
+
+        /* raga(a-alpha) a use to darkness */
+        /* box-shadow: 8px 8px 8px 4px rgba(62, 185, 187, 0.8); */
+
+        /* if you want to inside shadow, you use inset for inside shadow */
+        /* box-shadow: inset 5px 5px darkblue; */
+
+        /* if you want to multiple shadows, you use "," coma and insert one more same value */
+        box-shadow: 5px 5px darkblue, 10px 10px blue;
+    }
+
+    .card h2{
+        /* Text-Shadow */
+        text-shadow: 3px 3px rgb(116, 101, 101);
+    }
+</style>
+<body>
+    <div class="container">
+
+        <div class="card" id="card-1">
+           <h2>Card1</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam repellat quos est aut corporis dolore recusandae at! Quia minima atque aliquid voluptas voluptatibus vero voluptate consequatur, suscipit nihil iusto? Quia praesentium nam eaque.</p>
+        </div>
+
+        <div class="card" id="card-2">
+           <h2>Card2</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam repellat quos est aut corporis dolore recusandae at! Quia minima atque aliquid voluptas voluptatibus vero voluptate consequatur, suscipit nihil iusto? Quia praesentium nam eaque.</p>
+        </div>
+
+        <div class="card" id="card-3">
+           <h2>Card3</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam repellat quos est aut corporis dolore recusandae at! Quia minima atque aliquid voluptas voluptatibus vero voluptate consequatur, suscipit nihil iusto? Quia praesentium nam eaque.</p>
+        </div>
+    </div>
+</body>
+
+</html>
